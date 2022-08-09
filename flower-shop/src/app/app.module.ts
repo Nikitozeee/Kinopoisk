@@ -7,6 +7,10 @@ import { TopListComponent } from './top-list/top-list.component';
 import { CardComponent } from './card/card.component';
 import { AboutComponent } from './about/about.component';
 import { ReviewsComponent } from './reviews/reviews.component';
+import { CardCatalogComponent } from './card-catalog/card-catalog.component';
+import { ContactComponent } from './contact/contact.component';
+import { AngularYandexMapsModule } from 'angular8-yandex-maps';
+import { MapsComponent } from './maps/maps.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,12 +19,18 @@ import { ReviewsComponent } from './reviews/reviews.component';
     CardComponent,
     AboutComponent,
     ReviewsComponent,
+    CardCatalogComponent,
+    ContactComponent,
+    MapsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    [AngularYandexMapsModule],
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+

@@ -5,5 +5,5 @@ export interface INova {
       };
     
       model: string;
-      pk: number;
+      raiting: number;
 }

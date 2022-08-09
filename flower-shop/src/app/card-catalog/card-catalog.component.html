@@ -1,0 +1,20 @@
+<p>card-catalog works!</p>
+<div class="container">
+    <div class="row g-2">
+      <div
+        class="col-3 border text-center text-black bg-light mb-3 border-dark"
+        *ngFor="let card of cards"
+      >
+        <p class="border border-dark">ID: {{ card.id }}</p>
+        <img
+          class="img-thumbnail rounded-circle "
+          alt="Здесь должна быть картинка"
+          [src]="card.img"
+        />
+        <div class="card-header border border-dark">{{ card.name }}</div>
+        <div class="card-body">
+          <div class="card-text border border-dark">Цена = {{ card.price }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
