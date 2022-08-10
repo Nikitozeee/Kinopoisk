@@ -1,37 +1,42 @@
 <div class="container">
   <a href="/"><span> Главная \ Контакты</span></a>
-  <div><h1>Контакты</h1></div>
-  <div>Адрес: пр. Ленина, д. 54 б Тула</div>
   <div>
-    Телефон: <br />
-    <a href="tel:89066241707"> 8 (906)624 17 07</a><br />
-    <a href="tel:89066241707"> 8 (906)624 17 07</a>
+    <h1>Контакты</h1>
   </div>
-  <div>
-    E-mail: <a href="mailto: bekirov.nik@mail.ru"> bekirov.nik@mail.ru</a>
+  <div class="wrapper">
+    <div>Адрес:<br>пр. Ленина, д. 54 б Тула</div>
+    <div>Режим работы:<br>c 8:00 до 23:00</div>
+    <div>
+      Телефон: <br>
+      <a href="tel:89066241707">Флорист: 8 (906)624 17 07</a><br>
+      <a href="tel:89066241707">Доставка: 8 (906)624 17 07</a>
+    </div>
+    <div>
+      E-mail: <br> <a href="mailto: bekirov.nik@mail.ru">bekirov.nik@mail.ru</a>
+    </div>
   </div>
   <h1>Обратная связь</h1>
-  <span>Имя <input /></span> <br /><br />
-  <span>E-mail <input /></span><br /><br />
-  <label class="label label-primary"
-    ><input type="checkbox" /> Я согласен на обработку моих
-    <a>персональных данных</a></label
-  ><br />
-  <span>Сообщение <input /></span><br /><br />
-  <button type="submit">Отправить ></button>
-  <h1>ЮРИДИЧЕСКАЯ ИНФОРМАЦИЯ</h1>
-  <div>
-    ИП Илюшечкин А.Е. Свидетельство о гос. регистрации № 308715425400040 Выдано
-    10.09.2008 г. Илюшечкину Александру Евгеньевичу.
+  <div class="wrapper1">
+    <div>Имя<br><input></div>
+    <div>Сообщение<br><input></div>
+    <div>E-mail:<br><input></div>
   </div>
+  <p>
+  <div><input type="checkbox" />Я согласен на обработку моих
+    персональных данных</div>
+  <div><button type="submit">Отправить ></button></div>
+  <div class="wrapper2">
+    <app-maps></app-maps>
+    <div>
+      <h2>ЮРИДИЧЕСКАЯ ИНФОРМАЦИЯ</h2>
+    </div>
+    <div>
+      ИП Илюшечкин А.Е. Свидетельство о гос. регистрации № 308715425400040 Выдано
+      10.09.2008 г. Илюшечкину Александру Евгеньевичу.
+    </div>
+  </div>
+
   <h1>Наш магазин</h1>
-  <img
-      src="https://www.cvetkov-tula.ru/local/templates/main/static/assets/images/logo.svg"
-    />
-    <app-maps>
-    <div class="container">
-      <ya-map [center]="[55.751952, 37.600739]" [zoom]="12">
-        <ya-placemark [geometry]="[55.751952, 37.600739]"></ya-placemark>
-      </ya-map>
-    </div></app-maps>
+  <img src="https://www.cvetkov-tula.ru/local/templates/main/static/assets/images/logo.svg" />
+
 </div>
