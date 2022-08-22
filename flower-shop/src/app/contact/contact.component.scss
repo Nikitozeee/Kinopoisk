@@ -1,3 +1,57 @@
+@import "../../styles.scss";
+a {
+  color: black;
+}
+label {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+  }
+  &.name::before {
+    background: url("../../assets/people.svg") center / contain no-repeat;
+  }
+  &.message::before {
+    background: url("../../assets/pencil.svg") center / contain no-repeat;
+  }
+  &.email::before {
+    background: url("../../assets/message.svg") center / contain no-repeat;
+  }
+}
+.personal_data {
+  border-bottom: solid 1px black;
+  color: #ff005c;
+  &:hover {
+    border-bottom: none;
+    color: #ff005c;
+  }
+}
+// label:before {
+//   content: "";
+//   position: absolute;
+//   left: 10px;
+//   top: 0;
+//   bottom: 0;
+//   width: 20px;
+//   background: url("../../assets/person-fill.svg")center / contain no-repeat;
+// }
+
+input {
+  padding: 10px 30px;
+}
+.feedback {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+  color: #ff005c;
+  text-transform: uppercase;
+  padding: 0 0 30px 0;
+}
 .wrapper {
   display: grid;
 
@@ -6,6 +60,8 @@
   }
   &.two {
     grid-template-columns: 25% 25%;
+    max-width: 946px;
+    position: relative;
   }
   &.three {
     text-align: left;
@@ -17,12 +73,14 @@
     grid-template-rows: 1fr 1fr;
     grid-gap: 20px;
     height: 464px;
-    & .content-img {
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
+    padding-bottom: 80px;
   }
+  // & a{
+  //   transition:width 0.5s ease;
+  // }
+  // & a:hover{
+  //   width: auto;
+  // }
 }
 
 @media (max-width: 991.98px) {
@@ -39,4 +97,48 @@
   }
 }
 
-// hover
+//________________набор стилей уже есть в home.component_________________
+.index-top {
+  position: relative;
+  padding: 0 125px 0 0;
+  &_title {
+    display: inline-block;
+    font-family: "Yeseva One", cursive;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #817b71;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 2;
+    padding: 0 15px 0 0;
+  }
+  &_title.span {
+    display: inline-block;
+    font-family: "Yeseva One", cursive;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #817b71;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 2;
+    padding: 0 15px 0 0;
+  }
+  &_title.span::after {
+    content: "";
+    display: block;
+    width: calc(100% - 125px);
+    height: 0;
+    border-top: 1px solid rgba(129, 123, 113, 0.45);
+    position: absolute;
+    top: 20px;
+    left: 0;
+    z-index: 1;
+  }
+}
+// ______________________________________________________
