@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row a-i-center">
         <div class="col">
-          <a class="disable-hover-border" href="/">
+          <a class="disable-hover-border" routerLink="/">
             <img src="../../../assets/logo.svg" />
           </a>
         </div>
@@ -51,21 +51,21 @@
           <a class="nav-link" routerLink="/catalog/composition">Композиции</a>
         </p>
         <p>
-          <a class="nav-link" href="javascript:void(0);">Подарки</a>
+          <a class="nav-link" >Подарки</a>
         </p>
       </div>
       <div class="col">
         <p>
-          <a href="home" class="nav-link">О нас</a>
+          <a routerLink="about" class="nav-link">О нас</a>
         </p>
         <p>
-          <a href="javascript:void(0);" class="nav-link">Фотогаллерея</a>
+          <a routerLink="photo-gallery"  class="nav-link">Фотогаллерея</a>
         </p>
         <p>
-          <a href="reviews" class="nav-link">Отзывы</a>
+          <a routerLink="reviews"  class="nav-link">Отзывы</a>
         </p>
         <p>
-          <a href="delivery" class="nav-link">Доставка и оплата</a>
+          <a routerLink="delivery" class="nav-link">Доставка и оплата</a>
         </p>
         <p>
           <a href="javascript:void(0);" class="nav-link">Новости</a>
@@ -74,7 +74,7 @@
           <a href="javascript:void(0);" class="nav-link">Статьи</a>
         </p>
         <p>
-          <a href="contact" class="nav-link">Контакты</a>
+          <a routerLink="contact" class="nav-link">Контакты</a>
         </p>
       </div>
       <div class="col">
@@ -109,8 +109,7 @@
         <br />
         <button
           class="footer__call"
-          data-toggle="modal"
-          data-target="#form-modal"
+          (click)="openModalFeedback()"
         >
           Заказать звонок
         </button>

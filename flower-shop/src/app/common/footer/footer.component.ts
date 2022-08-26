@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { FeedbackComponent } from 'src/app/modal/feedback/feedback.component';
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  constructor(private modalService: NgbModal) { }
 
+ 
   ngOnInit(): void {
   }
-
+  openModalFeedback(){
+    const modal = this.modalService.open(FeedbackComponent);
+  }
 }

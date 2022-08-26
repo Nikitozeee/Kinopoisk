@@ -1,13 +1,13 @@
 <div class="shadow">
   <div class="header fixed top">
     <div class="container box">
-      <div><a class="nav_contact" href="about">О нас</a></div>
+      <div><a class="nav_contact" routerLink="about">О нас</a></div>
       <div>
-        <a class="nav_contact" href="javascript:void(0);">Фотогаллерея</a>
+        <a class="nav_contact" routerLink="photo-gallery">Фотогаллерея</a>
       </div>
-      <div><a class="nav_contact" href="reviews">Отзывы</a></div>
-      <div><a class="nav_contact" href="delivery">Доставка</a></div>
-      <div><a class="nav_contact" href="contact">Контакты</a></div>
+      <div><a class="nav_contact" routerLink="reviews">Отзывы</a></div>
+      <div><a class="nav_contact" routerLink="delivery">Доставка</a></div>
+      <div><a class="nav_contact" routerLink="contact">Контакты</a></div>
       <div class="fot_end">
         <div>
           <button class="header_button">
@@ -20,7 +20,7 @@
           </button>
         </div>
         <div>
-          <a class="header_button call">Заказать звонок</a>
+          <a class="header_button call" (click)="openModalFeedback()">Заказать звонок</a>
         </div>
       </div>
     </div>
@@ -29,7 +29,7 @@
       <div class="container">
         <div class="row" style="padding: 10px">
           <div class="col">
-            <a class="disable-hover-border" href="/"
+            <a class="disable-hover-border" routerLink="/"
               ><img src="../../../assets/logo.svg"
             /></a>
           </div>

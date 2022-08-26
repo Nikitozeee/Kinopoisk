@@ -1,0 +1,7 @@
+<div *ngFor="let photo of list">
+  <img
+    (click)="openModalZoomPhoto(photo.id)"
+    alt="Здесь должна быть картинка"
+    [src]="photo.url"
+  />
+</div>

@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
 import { ICard, TypePage } from '../interface/icard';
 
 const cards: ICard[] = [

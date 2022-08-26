@@ -1,9 +1,7 @@
 <div class="container">
   <a href="/"><span> Главная \ Контакты</span></a>
-  <div class="container d-flex bd-highlight">
-    <div class="p-2 w-100 bd-highlight index-top_title">
-      <span>Контакты</span>
-    </div>
+  <div class="page_title">
+    <h1>Контакты</h1>
   </div>
   <div class="wrapper one">
     <div>
@@ -37,7 +35,6 @@
         ><input placeholder="Написать сообщение"
       /></label>
     </div>
-    <!-- <textarea>Сообщение</textarea> -->
     <div>
       E-mail:<br /><label class="email"
         ><input placeholder="Ваша эл. почта"
@@ -45,25 +42,29 @@
     </div>
   </div>
   <p></p>
-  <div>
+  <div class="checkbox">
     <input type="checkbox" /> Я согласен на обработку моих
     <a class="personal_data" href="">персональных данных</a>
   </div>
   <br />
-  <div><button type="submit">Отправить ></button></div>
+  <div>
+    <button type="submit">
+      Отправить
+      <img src="../../assets/button_right.svg" />
+    </button>
+  </div>
   <br />
   <app-maps></app-maps>
   <div class="wrapper three">
-    <div>
-      <h2>ЮРИДИЧЕСКАЯ ИНФОРМАЦИЯ</h2>
-    </div>
-    <div>
-      ИП Илюшечкин А.Е. Свидетельство о гос. регистрации № 308715425400040
-      Выдано 10.09.2008 г. Илюшечкину Александру Евгеньевичу.
+    <div class="contacts_bottom-data">
+      <div class="contacts_bottom-title">Юридическая информация</div>
+      <p>ИП Илюшечкин А.Е.</p>
+      <p>Свидетельство о гос. регистрации № 308715425400040</p>
+      <p>Выдано 10.09.2008 г. Илюшечкину Александру Евгеньевичу.</p>
     </div>
   </div>
+  <div class="img_title">Наш магазин</div>
 
-  <h1>Наш магазин</h1>
   <div class="wrapper four">
     <a
       style="

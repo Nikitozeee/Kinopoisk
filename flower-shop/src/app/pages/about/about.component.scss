@@ -1,0 +1,152 @@
+@import url("../../../styles.scss");
+.about_text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  color: #333333;
+  padding: 0 0 55px 0;
+}
+.about_indicators {
+  background: url("../../../assets/about-indicators.png") no-repeat center;
+  background-size: cover;
+  padding: 60px 0 50px 0;
+  overflow: hidden;
+  margin: 0 0 55px 0;
+  &_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 -10px;
+  }
+  &_col {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+    text-align: center;
+  }
+  &_value {
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 0 0 15px 0;
+  }
+  &_name {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 20px 0 20px 0;
+    position: relative;
+  }
+  &_name::after,
+  ::before {
+    content: "";
+    display: block;
+    width: 118px;
+    height: 0;
+    border-top: 1px solid #ffffff;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  &_name::before {
+    top: 0;
+  }
+  &_name::after {
+    bottom: 0;
+  }
+}
+
+// .about_title {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr 1fr 1fr;
+//   grid-template-rows: auto auto;
+//   grid-gap: 20px;
+// }
+
+.about_tile {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 20px;
+  &-image-1 {
+    grid-area: 1/1/3/2;
+  }
+  &-image-2 {
+    grid-area: 1/2/2/3;
+  }
+  &-image-3 {
+    grid-area: 1/4/2/5;
+  }
+
+  &-image-4 {
+    grid-area: 2/3/3/5;
+  }
+}
+
+.about_tile-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  color: #333333;
+  &-1 {
+    grid-area: 1/3/2/4;
+  }
+  &-2 {
+    grid-area: 2/2/3/3;
+  }
+}
+
+.about_tile-title {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 0.1em;
+  color: #817b71;
+  padding: 0 0 25px 0;
+}
+.about_description {
+  background: url(../../../assets/about-desc.png) no-repeat center;
+  background-size: cover;
+  padding: 50px 50px;
+  margin-bottom: 80px;
+  &-inner {
+    max-width: 508px;
+    margin: 0 0 0 auto;
+  }
+  &-title {
+    font-family: "Yeseva One", cursive;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    padding: 0 0 30px 0;
+  }
+  &-text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    & p {
+      padding: 0 0 10px 0;
+      margin: 0;
+    }
+    & p:last-child {
+      padding: 0;
+    }
+  }
+}

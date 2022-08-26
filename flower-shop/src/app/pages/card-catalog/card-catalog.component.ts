@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ICard, TypePage } from '../interface/icard';
-import { FilterService } from '../service/filter.service';
+import { ICard, TypePage } from '../../interface/icard';
+import { FilterService } from '../../service/filter.service';
 
 @Component({
   selector: 'app-card-catalog',

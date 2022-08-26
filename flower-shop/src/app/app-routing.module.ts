@@ -1,17 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutComponent } from './about/about.component';
-import { CardCatalogComponent } from './card-catalog/card-catalog.component';
-import { ContactComponent } from './contact/contact.component';
-import { DeliveryComponent } from './delivery/delivery.component';
-import { HomeComponent } from './home/home.component';
-import { MapsComponent } from './maps/maps.component';
-import { ReviewsComponent } from './reviews/reviews.component';
+import { AboutComponent } from './pages/about/about.component';
+import { CardCatalogComponent } from './pages/card-catalog/card-catalog.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { DeliveryComponent } from './pages/delivery/delivery.component';
+import { HomeComponent } from './pages/home/home.component';
+import { MapsComponent } from './common/maps/maps.component';
+import { ReviewsComponent } from './pages/reviews/reviews.component';
+import { PhotoGalleryComponent } from './pages/photo-gallery/photo-gallery.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'reviews', component: ReviewsComponent },
+  { path: 'photo-gallery', component: PhotoGalleryComponent },
   { path: 'catalog',
    children: [
     { path: 'rose', component: CardCatalogComponent },
