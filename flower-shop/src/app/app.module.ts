@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -27,14 +26,8 @@ import { NavBarComponent } from './common/nav-bar/nav-bar.component';
     FooterComponent,
     NavBarComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    [AngularYandexMapsModule],
-  ],
+  imports: [BrowserModule, AppRoutingModule, [AngularYandexMapsModule]],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
-
-
+export class AppModule {}

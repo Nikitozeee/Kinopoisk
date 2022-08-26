@@ -30,15 +30,6 @@ label {
     color: #ff005c;
   }
 }
-// label:before {
-//   content: "";
-//   position: absolute;
-//   left: 10px;
-//   top: 0;
-//   bottom: 0;
-//   width: 20px;
-//   background: url("../../assets/person-fill.svg")center / contain no-repeat;
-// }
 
 input {
   padding: 10px 30px;
@@ -75,70 +66,18 @@ input {
     height: 464px;
     padding-bottom: 80px;
   }
-  // & a{
-  //   transition:width 0.5s ease;
-  // }
-  // & a:hover{
-  //   width: auto;
-  // }
-}
 
-@media (max-width: 991.98px) {
-  .wrapper.four {
-    height: 360px;
+  @media (max-width: 991.98px) {
+    .wrapper.four {
+      height: 360px;
+    }
+  }
+  @media (max-width: 767.98px) {
+    .wrapper.four {
+      height: auto;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto auto;
+      grid-gap: 10px;
+    }
   }
 }
-@media (max-width: 767.98px) {
-  .wrapper.four {
-    height: auto;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    grid-gap: 10px;
-  }
-}
-
-//________________набор стилей уже есть в home.component_________________
-.index-top {
-  position: relative;
-  padding: 0 125px 0 0;
-  &_title {
-    display: inline-block;
-    font-family: "Yeseva One", cursive;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 42px;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: #817b71;
-    background-color: #ffffff;
-    position: relative;
-    z-index: 2;
-    padding: 0 15px 0 0;
-  }
-  &_title.span {
-    display: inline-block;
-    font-family: "Yeseva One", cursive;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 42px;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: #817b71;
-    background-color: #ffffff;
-    position: relative;
-    z-index: 2;
-    padding: 0 15px 0 0;
-  }
-  &_title.span::after {
-    content: "";
-    display: block;
-    width: calc(100% - 125px);
-    height: 0;
-    border-top: 1px solid rgba(129, 123, 113, 0.45);
-    position: absolute;
-    top: 20px;
-    left: 0;
-    z-index: 1;
-  }
-}
-// ______________________________________________________

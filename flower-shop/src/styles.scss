@@ -9,12 +9,61 @@ a {
     border: none;
   }
 }
-
+.nav-link {
+  display: inline;
+  &:hover {
+    color: #ff005c;
+  }
+}
 .a-i-center {
-    align-items: center;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.07em;
-    color: #333333;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.07em;
+  color: #333333;
+}
+
+.index-top {
+  position: relative;
+  padding: 0 125px 0 0;
+  &_title {
+    display: inline-block;
+    //font-family: "Yeseva One", cursive;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #817b71;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 2;
+    padding: 0 15px 0 0;
+  }
+  &_title.span {
+    display: inline-block;
+    font-family: "Yeseva One", cursive;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #817b71;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 2;
+    padding: 0 15px 0 0;
+  }
+  &_title.span::after {
+    content: "";
+    display: block;
+    width: calc(100% - 125px);
+    height: 0;
+    border-top: 1px solid rgba(129, 123, 113, 0.45);
+    position: absolute;
+    top: 20px;
+    left: 0;
+    z-index: 1;
+  }
 }

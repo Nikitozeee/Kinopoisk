@@ -1,10 +1,12 @@
+@import url("../../styles.scss");
+@import url("../common/nav-bar/nav-bar.component.scss");
 .delivery {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.02em;
   color: #333333;
-  &.h3 {
+  & h3 {
     font-weight: normal;
     font-size: 24px;
     line-height: 29px;
@@ -14,7 +16,7 @@
     margin: 0;
     text-transform: uppercase;
   }
-  &.h4 {
+  & h4 {
     font-weight: normal;
     font-size: 18px;
     line-height: 22px;
@@ -23,21 +25,20 @@
     padding: 0 0 25px 0;
     margin: 0;
   }
-  &.ul {
+  &ul {
     list-style: none;
     padding: 0;
     margin: 0;
   }
   & ul li {
     list-style: none;
-    padding: 0 0 0 23px;
     position: relative;
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
     letter-spacing: 0.02em;
     color: #333333;
-    margin: 0 0 10px 0;
+    margin: 0 0 10px -8px;
   }
   & ul li:after {
     content: "";
@@ -45,29 +46,119 @@
     width: 18px;
     height: 18px;
     position: absolute;
-    top: 0;
-    left: 0;
-    background: url(/1.svg) no-repeat 0 0;
+    top: 3px;
+    left: -25px;
+    background: url("../../assets/icon-check.svg") no-repeat 0 0;
     background-size: 18px 18px;
   }
-  .delivery__note {
-    color: #8a8a8a;
-    font-size: 12px;
-    line-height: 15px;
-    padding: 0 0 0 23px;
-  }
-  &.delivery__quot {
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.07em;
-    color: #333333;
-    padding: 0 0 0 16px;
-    border-left: 5px solid #ff005c;
-    margin: 25px 0 0 0;
+}
+.delivery__note {
+  color: #8a8a8a;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 0 0 25px 0;
+}
+.delivery_quot {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.07em;
+  color: #333333;
+  padding: 0 0 0 16px;
+  border-left: 5px solid #ff005c;
+  margin: 25px 0 0 0;
+}
+.delivery_contact {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.07em;
+  color: #000000;
+  padding: 40px 0 40px 0;
+}
+
+.call {
+  border-bottom: solid 1px #ff005c;
+  color: #ff005c;
+  font-weight: 600;
+  &.call:hover {
+    border-bottom: none;
+    color: #ff005c;
   }
 }
-.page-title {
+.mastercard {
+  width: 41px;
+  height: 32px;
+}
+.visa {
+  width: 94px;
+  height: 25px;
+}
+.mir {
+  width: 91px;
+  height: 26px;
+}
+.sberbank {
+  width: 158px;
+  height: 26px;
+}
+.aPay {
+  width: 63px;
+  height: 29px;
+}
+.gPay {
+  width: 65px;
+  height: 26px;
+}
+.yMoney {
+  width: 113px;
+  height: 45px;
+}
+.webMoney {
+  width: 120px;
+  height: 29px;
+}
+.row {
+  align-items: center;
+}
+.delivery_empty {
+  height: 0;
+  margin: 53px 0 50px 0;
+  border-top: 1px solid rgba(129, 123, 113, 0.45);
+}
+.delivery_empty-2 {
+  height: 30px;
+}
+.page_title {
   position: relative;
   margin: 0 0 40px 0;
+  & h1 {
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #817b71;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    padding: 0 15px 0 0;
+    background-color: #ffffff;
+    margin: 0;
+  }
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0;
+    border-top: 1px solid rgba(129, 123, 113, 0.45);
+    position: absolute;
+    top: 20px;
+    left: 0;
+    z-index: 1;
+  }
+}
+#link {
+  padding: 15px;
 }
